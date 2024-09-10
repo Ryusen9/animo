@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/4.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animo</title>
+  </head>
+  <body class="font-poppins">
+    <header class="fixed w-full left-0 top-0 z-10 overflow-hidden">
+      <nav class="w-[80%] md:w-[90%] lg:w-[80%] mx-auto flex items-center justify-between py-3">
+        <div class="logo"><p class="font-lobster text-3xl">Animo</p></div>
+        <div id="menuBar" class="md:hidden"><i class="fa-solid fa-grid-2 text-3xl cursor-pointer"></i></div>
+        <div class="menuContainer hidden md:block">
+          <ul class="w-full flex gap-5 lg:gap-6">
+            <li class="font-semibold hover:text-yellow-300 duration-150"><a href="#">Home</a></li>
+            <li class="font-semibold hover:text-yellow-300 duration-150"><a href="#">Profile</a></li>
+            <li class="font-semibold hover:text-yellow-300 duration-150"><a href="#">Theatre</a></li>
+            <li class="font-semibold hover:text-yellow-300 duration-150"><a href="#">Settings</a></li>
+            <li class="font-semibold hover:text-yellow-300 duration-150"><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+       <div class="btns hidden md:block">
+        <button class="font-medium bg-yellow-400 mr-2 py-2 px-3 rounded-xl shadow-lg">Sign Up</button>
+        <button class="py-2 px-3 border-2 border-yellow-400 rounded-xl font-medium">Log in</button>
+       </div>
+      </nav>
+      <aside class="z-50">
+        <div id="sideMenuContainer" class="h-[100vh] w-[70%] rounded-l-3xl border-2 fixed top-0 right-0 backdrop-blur-xl translate-x-[100%] duration-300 p-10">
+          <i class="fa-solid fa-xmark-large text-2xl cursor-pointer" id="closeMenu"></i>
+          <div class="asideContainer mt-7 flex flex-col gap-4">
+            <div class="profileSection">
+              <div class="shrink-0 group block">
+                <div class="flex items-center">
+                  <img class="inline-block shrink-0 size-[62px] rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Avatar">
+                  <div class="ms-3">
+                    <h3 class="font-semibold text-gray-800">Mark Wanner</h3>
+                    <p class="text-sm font-medium text-gray-400">m***@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="searchSection flex justify-center items-center w-full">
+              <input type="text" class="py-2 px-4 focus:outline-none rounded-l-xl"><button class="py-2 focus:outline-none rounded-r-xl bg-yellow-400 px-4"><i class="fa-duotone fa-solid fa-magnifying-glass text-black text-lg"></i></button>
+            </div>
+
+            <div class="menuItems mt-9">
+              <ul class="flex flex-col gap-2">
+                <li class="py-3 hover:bg-white px-5 rounded-2xl duration-200 cursor-pointer font-medium"><a href="#">Home</a></li>
+                <li class="py-3 hover:bg-white px-5 rounded-2xl duration-200 cursor-pointer font-medium"><a href="#">Watch list</a></li>
+                <li class="py-3 hover:bg-white px-5 rounded-2xl duration-200 cursor-pointer font-medium"><a href="#">Completed</a></li>
+                <li class="py-3 hover:bg-white px-5 rounded-2xl duration-200 cursor-pointer font-medium"><a href="#">Settings</a></li>
+                <li class="py-3 hover:bg-white px-5 rounded-2xl duration-200 cursor-pointer font-medium"><a href="#">Support</a></li>
+              </ul>
+            </div>
+
+            <div class="bottomMenu">
+              <div class="buttonGroup flex flex-col justify-center items-center gap-2">
+                <button class="bg-yellow-300 py-2 px-3 rounded-lg shadow-2xl active:shadow-none">Sign Up</button>
+                <p>Already have an Account? <a href="#" class="font-semibold hover:text-yellow-400 duration-100 underline">Log in</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </header>
+    <main>
+      <div id="hero" class="relative h-[100vh] overflow-hidden flex gap-6 items-center justify-center">
+        <div class="cirecle1 bg-yellow-300 w-64 h-64 md:w-[500px] md:h-[500px] -right-20 top-16 opacity-30 rounded-full absolute blur-lg"></div>
+        <div class="cirecle1 bg-yellow-300 w-64 h-64 -left-36 top-56 md:w-[400px] md:h-[400px] rounded-full opacity-45 absolute blur-lg"></div>
+        <div class="heroContent flex flex-col lg:flex-row gap-6 lg:w-[90%] mx-auto justify-center items-center">
+          <div class="textContainer px-9 z-[1] flex flex-col gap-3 pt-5">
+            <p class="text-4xl md:text-5xl lg:text-6xl z-[3] font-semibold">Welcome to <br> <span class="text-yellow-400" id="typedText"></span></p>
+            <p class="w-[280px] md:w-[400px]">Animo is a anime platform. Where you can browse tons of anime around world for free! Join our community now to stream anime with your friends and close ones!</p>
+            <button class="border-2 border-yellow-300 py-2 w-[55%] rounded-lg hover:bg-yellow-300  hover:text-white font-semibold duration-200 shadow-xl hover:shadow-none">Explore Now!!</button>
+          </div>
+          <div class="sticker z-[1] w-[410px] flex items-center justify-center">
+            <img src="./assets/demon-slayer-zenitsu-side-stance-with-katana-under-arm-sticker.png" alt="" class="w-[300px] h-[350px] lg:w-[400px] lg:h-[450px] animate-fade-down">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- !Script -->
+    <script src="main.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#typedText', {
+    strings: ['Animo'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    looped: true
+  });
+    </script>
+  </body>
+</html>
